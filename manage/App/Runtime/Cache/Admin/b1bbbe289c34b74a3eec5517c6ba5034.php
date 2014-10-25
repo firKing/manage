@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="/manage/App/Admin/Public/Css/public.css" />
+	<link rel="stylesheet" href="/REM/manage/App/Admin/Public/Css/public.css" />
 </head>
 <body>
 	<table class="table">

@@ -6,16 +6,15 @@
 	<head>
         <meta charset="utf-8">
         <title>首页</title>
-        <link rel="stylesheet" type="text/css" href="/manage/Public/style/index.css">
-		
+        <link rel="stylesheet" type="text/css" href="/REM/manage/Public/style/index.css">
+
 	</head>
 <body>
 		<div id="header">
 			<div class="head">
 				<a href="<?php echo U('Home/Index/index');?>">
-					<div class="logo">       
+					<div class="logo">
 			    </div></a>
-			    
 			    <?php if(!isset($_SESSION[C('USER_AUTH_KEY')])): ?><div class="login">
 			            <p title="登录">登录</p>
 			        </div>
@@ -110,14 +109,13 @@
 						</div>
 					</div>
 					<div class="right" title="后四项任务">
-						
 					</div>
 				</div>
 			</div>
 		</div>
 
 <div id="footer">
-	<p><a href="##" title="关于红岩网校">关于红岩网校</a> | <a href="##" title="网站地图">网站地图</a> | <a href="##" title="指出错误">指出错误</a> | <a href="/manage/index.php/Admin/Index/index" title="管理入口">管理入口</a> </p>
+	<p><a href="##" title="关于红岩网校">关于红岩网校</a> | <a href="##" title="网站地图">网站地图</a> | <a href="##" title="指出错误">指出错误</a> | <a href="/REM/manage/index.php/Admin/Index/index" title="管理入口">管理入口</a> | <a href="">用户注册</a> </p>
 	<p>本网站由红岩网校工作站负责开发，管理，不经红岩网校委员会书面同意，不得进行转载</p>
 	<p>地址：重庆市南岸区崇文路2号（重庆邮电大学内） 400065 E-mail:redrock@cqupt.edu.cn (023-62461084)</p>
 </div>
@@ -158,7 +156,7 @@
 <div class="theme-popover-mask"></div>
 <div class="theme-popover-mask-fff"></div>
 
-<script type="text/javascript" src="/manage/Public/js/jQueryv1.7.2.js"></script>
-<script type="text/javascript" src="/manage/Public/js/index.js"></script>
+<script type="text/javascript" src="/REM/manage/Public/js/jQueryv1.7.2.js"></script>
+<script type="text/javascript" src="/REM/manage/Public/js/index.js"></script>
 </body>
 </html>

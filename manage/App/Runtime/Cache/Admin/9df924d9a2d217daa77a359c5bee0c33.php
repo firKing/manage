@@ -1,10 +1,10 @@
 <?php if (!defined('THINK_PATH')) exit();?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<script type="text/javascript" src="/manage/App/Admin/Public/Js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="/manage/App/Admin/Public/Js/index.js"></script>
-<link rel="stylesheet" href="/manage/App/Admin/Public/Css/public.css" />
-<link rel="stylesheet" href="/manage/App/Admin/Public/Css/index.css" />
+<script type="text/javascript" src="/REM/manage/App/Admin/Public/Js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/REM/manage/App/Admin/Public/Js/index.js"></script>
+<link rel="stylesheet" href="/REM/manage/App/Admin/Public/Css/public.css" />
+<link rel="stylesheet" href="/REM/manage/App/Admin/Public/Css/index.css" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <base target="iframe"/>
 <head>
@@ -14,7 +14,6 @@
 		<div class="menu">
 			<a href="<?php echo U('Admin/Index/conf');?>">后台首页</a>
 			<a href="<?php echo U('Home/Index/index');?>" target="_blank">前台首页</a>
-			<a href="<?php echo U('Home/Apart/index');?>" target="_blank">部门首页</a>
 			<!-- <a href="#">选择按钮</a>
 			<a href="#">选择按钮</a>
 			<a href="#">选择按钮</a> -->

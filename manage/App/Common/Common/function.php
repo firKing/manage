@@ -30,5 +30,10 @@ function replace_phiz ($content) {
 		}
 	}
 	return $content;
+};
+
+function dd($a){
+
+	return die(dump($a));
 }
 ?>

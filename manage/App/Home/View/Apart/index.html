@@ -235,7 +235,6 @@
             </div>
             <div class="content_top" id="share_">
                 <div class="list_bc">
-                    
                     <ul class="task">
                         <li class="onclick">资源共享</li>
                         <div class="button">
@@ -244,9 +243,7 @@
                             </span>
                         </div>
                     </ul>
-                    
                 </div>
-                
                 <div class="inform">
                     <table cellspacing="0">
                         <tr class="inform_odd inform_header">
@@ -281,7 +278,6 @@
                         <div class="button"><span class="change"><h1>&#xe630;</h1>修改信息</span></div>
                     </ul>
                 </div>
-                
                <div class="inform phone_message">
                     <table cellspacing="0">
                         <tr class="inform_odd inform_header">
@@ -298,7 +294,7 @@
                             <td class="email">{$info_list.email}</td>
                         </tr>
                         </volist>
-                    </table>   
+                    </table>
                 </div>
                 <span class="phone_more">查看更多</span>
             </div>
@@ -313,7 +309,6 @@
                     var url="__CONTROLLER__/ajax";
                     var url1="__CONTROLLER__/ajax1";
                     var url2="__CONTROLLER__/ajax2";
-                
                 </script>
                 <div class="inform">
                     <table cellspacing="0">
@@ -336,15 +331,12 @@
                 </div>
                 <span class="que_more">查看更多</span>
             </div>
-
-
-
-            <div class="content_bottom">
+            <!-- <div class="content_bottom">
                 <div><a href="">关于红岩网站</a><a href="">网站地图</a><a href="">指出错误</a><a href="{:U('Admin/Index/index')}">管理入口</a></div>
 
                 <p>本网站由红岩网校工作站负责开发，管理，不经红岩网校委员会书面同意，不得进行转载</p>
                 <p>地址：重庆市南岸区崇文路2号（重庆邮电大学内） 400065 E-mail:redrock@cqupt.edu.cn (023-62461084)</p>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -362,9 +354,7 @@
                 </ol>
             </form>
         </div>
-    </div>      
-
-
+    </div>
     <div id="changepass">
         <div class="theme-poptit">
             <div title="关闭" class="close"></div>
@@ -390,7 +380,7 @@
             <input id="wenda_button" type="submit" name="submit" value="提问">
         </form>
         </div>
-    </div>  
+    </div>
     <div id="message">
         <div class="theme-poptit">
             <div title="关闭" class="close"></div>
@@ -406,7 +396,7 @@
                 </ol>
             </form>
         </div>
-    </div> 
+    </div>
     <div id="reply">
         <div class="reply_close" title="关闭" ></div>
         <div class="reply_tie">
@@ -418,22 +408,19 @@
         </div>
         <textarea class="your_ans" name="your_reply" id="my_reply"></textarea>
         <input class="response" type="submit" name="submit" value="回复" onclick="ajax2()">
-      
         <div class="answer_box">
-            
         </div>
         <span id="more">查看更多回复</span>
         <span id="less">收起</span>
     </div>
-        </div> 
+        </div>
     <div id="upload_file" type = "width:500pxeven">
          <div class="upload_file_close"></div>
          <form action="{:U('Home/Resource/index')}" enctype="multipart/form-data" method="post" >
              <input type="file" name="file" type="float:left" />
              <input type="submit" class="upload_button" value="上传" >
          </form>
-     </div> 
-
+     </div>
     <div class="theme-popover-mask"></div>
     <div class="theme-popover-mask-fff"></div>
 </body>

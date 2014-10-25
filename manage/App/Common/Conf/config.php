@@ -24,8 +24,7 @@ return array(
     'ADMIN_AUTH_KEY' => 'superadmin',   //超级管理员识别
     'USER_AUTH_ON' => true,             //是否开启验证
     'USER_AUTH_TYPE' => 1,              //验证类型(1:登录验证 2:实时验证)
-    
-    
+
     'RBAC_ROLE_TABLE' => 'role',        //角色表名称
     'RBAC_USER_TABLE' => 'role_user',   //角色表和用户表的中间表
     'RBAC_ACCESS_TABLE' => 'access',    //权限表名称

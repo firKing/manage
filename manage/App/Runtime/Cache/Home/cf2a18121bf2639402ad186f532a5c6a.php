@@ -3,8 +3,8 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>部门首页</title>
-    <link rel="stylesheet" href="/oldmanage/Public/style/style1.css" type="text/css">
-    <script type="text/javascript" src="/oldmanage/Public/js/jQueryv1.7.2.js"></script><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <link rel="stylesheet" href="/REM/manage/Public/style/style1.css" type="text/css">
+    <script type="text/javascript" src="/REM/manage/Public/js/jQueryv1.7.2.js"></script><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
     <script type="text/javascript">
      var url = '<?php echo U('Home/Ajax/index', '', '');?>';
     </script>
@@ -231,7 +231,7 @@
                             <td class="doc"><?php echo ($resource["type"]); ?></td>
                             <td><?php echo sprintf("%.2f",$resource['size']/1024/1024); ?>Mb</td>
                             <td><?php echo date("m-d H:i",$resource['time']);?></td>
-                            <td><a href="/oldmanage/Uploads/resource/<?php echo ($resource["savepath"]); ?>" class="inform_down">&#xe718;</a></td>
+                            <td><a href="/REM/manage/Uploads/resource/<?php echo ($resource["savepath"]); ?>" class="inform_down">&#xe718;</a></td>
                         </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                     </table>
                 </div>
@@ -276,9 +276,9 @@
                     </ul>
                 </div>
                 <script>
-                    var url="/oldmanage/index.php/Home/Apart/ajax";
-                    var url1="/oldmanage/index.php/Home/Apart/ajax1";
-                    var url2="/oldmanage/index.php/Home/Apart/ajax2";
+                    var url="/REM/manage/index.php/Home/Apart/ajax";
+                    var url1="/REM/manage/index.php/Home/Apart/ajax1";
+                    var url2="/REM/manage/index.php/Home/Apart/ajax2";
                 
                 </script>
                 <div class="inform">
@@ -300,15 +300,12 @@
                 </div>
                 <span class="que_more">查看更多</span>
             </div>
-
-
-
-            <div class="content_bottom">
+            <!-- <div class="content_bottom">
                 <div><a href="">关于红岩网站</a><a href="">网站地图</a><a href="">指出错误</a><a href="<?php echo U('Admin/Index/index');?>">管理入口</a></div>
 
                 <p>本网站由红岩网校工作站负责开发，管理，不经红岩网校委员会书面同意，不得进行转载</p>
                 <p>地址：重庆市南岸区崇文路2号（重庆邮电大学内） 400065 E-mail:redrock@cqupt.edu.cn (023-62461084)</p>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -401,6 +398,6 @@
     <div class="theme-popover-mask"></div>
     <div class="theme-popover-mask-fff"></div>
 </body>
-<script type="text/javascript" src="/oldmanage/Public/js/main1.js"></script>
-<script type="text/javascript" src="/oldmanage/Public/js/ajax.js"></script>
+<script type="text/javascript" src="/REM/manage/Public/js/main1.js"></script>
+<script type="text/javascript" src="/REM/manage/Public/js/ajax.js"></script>
 </html>

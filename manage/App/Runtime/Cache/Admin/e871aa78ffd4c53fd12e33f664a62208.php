@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="/oldmanage/App/Admin/Public/Css/public.css" />
+	<link rel="stylesheet" href="/REM/manage/App/Admin/Public/Css/public.css" />
 </head>
 <body>
 	<table class="table">
@@ -18,7 +18,7 @@
 				<td><?php echo ($v["username"]); ?></td>
 				<td><?php echo (date( "m-d H:i", $v["time"])); ?></td>
 				<?php $vid = $v['work_up_id']; ?>
-				<td><!-- <a href="/oldmanage/Uploads/work/<?php echo ($v["savepath"]); ?>">下载</a> &url=<?php echo ($savepath); ?>-->
+				<td><!-- <a href="/REM/manage/Uploads/work/<?php echo ($v["savepath"]); ?>">下载</a> &url=<?php echo ($savepath); ?>-->
 	<a href="<?php echo U('Admin/Work/downWork',array('vid'=>$vid));?>">下载</a></td>
 			</tr><?php endforeach; endif; ?>
 	</table>

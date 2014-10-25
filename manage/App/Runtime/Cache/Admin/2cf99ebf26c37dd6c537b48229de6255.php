@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="/manage/App/Admin/Public/Css/public.css" />
+	<link rel="stylesheet" href="/REM/manage/App/Admin/Public/Css/public.css" />
 	<style type="text/css">
 		#usersearch{
 			width: 520px;
@@ -36,9 +36,8 @@
 			<th>上次登录时间</th>
 			<th>上次登陆IP</th>
 			<th>锁定状态</th>
-			<th>用户所属组别</th>
+			<th>所属组别</th>
 			<th>所属部门</th>
-			<th>所属职位</th>
 			<th>操作</th>
 		</tr>
 		<?php if(is_array($user)): foreach($user as $key=>$v): ?><tr>
@@ -46,22 +45,17 @@
 				<td><?php echo ($v["username"]); ?></td>
 				<td><?php echo (date('y-m-d H:i', $v["logintime"])); ?></td>
 				<td><?php echo ($v["loginip"]); ?></td>
-				<td><?php if($v["lock"]): ?>锁定<?php endif; ?></td>
+				<td><?php if(!$v["user_status"]): ?>锁定<?php endif; ?></td>
 				<td>
 					<?php if($v["username"] == C("RBAC_SUPERADMIN")): ?>炒鸡管理员
 					<?php else: ?>
 						<ul>
-							<?php if(is_array($v["role"])): foreach($v["role"] as $key=>$value): ?><li><?php echo ($value["name"]); ?>(<?php echo ($value["remark"]); ?>)</li><?php endforeach; endif; ?>
+							<?php if(is_array($v['role'])): foreach($v['role'] as $key=>$value): ?><li><?php echo ($value["name"]); ?>(<?php echo ($value["remark"]); ?>)</li><?php endforeach; endif; ?>
 						</ul><?php endif; ?>
 				</td>
 				<td>
 					<ul>
-						<?php if(is_array($v["apartment"])): foreach($v["apartment"] as $key=>$ap): ?><li><?php echo ($ap["name"]); ?></li><?php endforeach; endif; ?>
-					</ul>
-				</td>
-				<td>
-					<ul>
-						<?php if(is_array($v["level"])): foreach($v["level"] as $key=>$le): ?><li><?php echo ($le["name"]); ?></li><?php endforeach; endif; ?>
+						<?php if(is_array($v['apartment'])): foreach($v['apartment'] as $key=>$ap): ?><li><?php echo ($ap["name"]); ?></li><?php endforeach; endif; ?>
 					</ul>
 				</td>
 				<td>

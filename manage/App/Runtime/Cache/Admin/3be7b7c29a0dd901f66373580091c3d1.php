@@ -3,10 +3,10 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="/manage/App/Admin/Public/Css/public.css" />
-	<link rel="stylesheet" href="/manage/App/Admin/Public/kindeditor/themes/default/default.css" />
-	<script charset="utf-8" src="/manage/App/Admin/Public/kindeditor/kindeditor.js"></script>
-	<script charset="utf-8" src="/manage/App/Admin/Public/kindeditor/lang/zh_CN.js"></script>
+	<link rel="stylesheet" href="/REM/manage/App/Admin/Public/Css/public.css" />
+	<link rel="stylesheet" href="/REM/manage/App/Admin/Public/kindeditor/themes/default/default.css" />
+	<script charset="utf-8" src="/REM/manage/App/Admin/Public/kindeditor/kindeditor.js"></script>
+	<script charset="utf-8" src="/REM/manage/App/Admin/Public/kindeditor/lang/zh_CN.js"></script>
 	<script>
 		var editor;
 			KindEditor.ready(function(K) {

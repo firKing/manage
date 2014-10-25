@@ -7,11 +7,11 @@ use Think\Model\RelationModel;
 *	**发送多条SQL语句,视图模型用join只发送一条SQL语句**
 */
 class UserRelationModel extends RelationModel{
-	
+
 	//定义主表名称
 	Protected $tableName = 'user';
 
-/*		
+/*
 *	**HAS_ONE 一对一关系**
 *	**HAS_MANY 一对多关系**
 *	**MANY_TO_MANY 多对多关系**

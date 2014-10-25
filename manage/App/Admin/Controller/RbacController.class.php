@@ -2,50 +2,42 @@
 namespace Admin\Controller;
 use Think\Controller;
 /**
-* 
+*
 */
 class RbacController extends CommonController {
 
 	//用户列表
 	public function index(){
 		//取出用户信息
-		$User = M('user');
+		// $User = M('user');
+		$User = D('UserRelation');
 		$searchName = I('search');
 
 		if ($searchName !== "") {
 
-			$count = $User
-						->join('LEFT JOIN user_dept_role ON user.user_id = user_dept_role.user_id')
-						->join('LEFT JOIN role ON user_dept_role.role_id = role.id')
-						->join('LEFT JOIN department ON user_dept_role.dept_id = department.dept_id')
-						->where(array('user_name' => $searchName))
-						->count();
+			$map['username'] = array('LIKE', $searchName);
 
-			$Page = new \Think\Page($count,7);// 实例化分页类
+			$count = $User->field('password', true)->relation(true)
+						  ->where($map)
+						  ->count();
 
-			$list = $User->limit($Page->firstRow.','.$Page->listRows)
-						->join('LEFT JOIN user_dept_role ON user.user_id = user_dept_role.user_id')
-						->join('LEFT JOIN role ON user_dept_role.role_id = role.id')
-						->join('LEFT JOIN department ON user_dept_role.dept_id = department.dept_id')
-						->where(array('user_name' => $searchName))
+			$Page = new \Think\Page($count,12);// 实例化分页类
+
+			$list = $User->field('password', true)->relation(true)
+						 ->limit($Page->firstRow.','.$Page->listRows)
+						 ->where($map)
 						 ->select();
 		}else{
 
-			$count = $User->join('LEFT JOIN user_dept_role ON user.user_id = user_dept_role.user_id')
-						->join('LEFT JOIN role ON user_dept_role.role_id = role.id')
-						->join('LEFT JOIN department ON user_dept_role.dept_id = department.dept_id')
-						->count();
+			$count = $User->field('password', true)->relation(true)
+						  ->count();
 
 			$Page = new \Think\Page($count,7);// 实例化分页类
-
-			$list = $User->join('LEFT JOIN user_dept_role ON user.user_id = user_dept_role.user_id')
-						->join('LEFT JOIN role ON user_dept_role.role_id = role.id')
-						->join('LEFT JOIN department ON user_dept_role.dept_id = department.dept_id')
-						->limit($Page->firstRow.','.$Page->listRows)
-						->select();			
+			$list = $User->field('password', true)->relation(true)
+						 ->limit($Page->firstRow.','.$Page->listRows)
+						 ->select();
 		}
-		dump($list);
-		die;
+		//dd($list);
     	$show = $Page->show();// 分页显示输出
     	$this->assign('user',$list);// 赋值数据集
     	$this->assign('page',$show);// 赋值分页输出
@@ -81,7 +73,7 @@ class RbacController extends CommonController {
 	//添加用户界面
 	public function addUser(){
 		$role = M('role')->select();
-		$dept = M('department')->select();
+		$dept = M('apartment')->select();
 
 		$this->assign('role', $role);
 		$this->assign('dept', $dept);
@@ -91,6 +83,7 @@ class RbacController extends CommonController {
 
 	//添加用户表单管理
 	public function addUserHandle(){
+
 		//用户信息
 		if (!I('username') || !I('password', '', 'md5')) {
 			$this->error('用户名密码不能为空');
@@ -101,11 +94,11 @@ class RbacController extends CommonController {
 			}
 		}
 		$user = array(
-			'user_name' => I('username'),
-			'user_password' => I('password', '', 'md5'),
-			'user_log_time' => time(),
-			'user_log_ip' => get_client_ip(),
-			'user_status' => 1
+			'username' => I('username'),
+			'password' => I('password', '', 'md5'),
+			'logintime' => time(),
+			'loginip' => get_client_ip(),
+			'lock' => 1
 			);
 
 		//所属部门
@@ -114,14 +107,19 @@ class RbacController extends CommonController {
 
 			//添加部门和职务信息
 			foreach (I('info') as $v) {
+
 				$info[] = array(
-					'dept_id' => $v['dept'],
+					'apart_id' => $v['dept'],
+					'user_id' => $uid
+					);
+
+				M('apart_user')->addAll($info);
+
+				$info[] = array(
 					'role_id' => $v['role'],
 					'user_id' => $uid
 					);
 			}
-			M('user_dept_role')->addAll($info);
-
 			$this->success('添加用户成功', U('Admin/Rbac/index'));
 		}else{
 			$this->error('添加用户失败');
@@ -134,7 +132,8 @@ class RbacController extends CommonController {
 		$r2 = M('role_user')->where(array('user_id' =>I('uid')))->delete();
 		$r3 = M('apart_user')->where(array('user_id' =>I('uid')))->delete();
 		$r4 = M('level_user')->where(array('user_id' =>I('uid')))->delete();
-		if ($r1 && $r2 && $r3 && $r4) {
+
+		if ($r1 || $r2 || $r3 || $r4) {
 			$this->success('删除用户成功');
 		}else{
 			$this->error('删除用户失败');

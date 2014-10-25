@@ -3,17 +3,17 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="/manage/App/Admin/Public/Css/public.css" />
-	<link rel="stylesheet" href="/manage/App/Admin/Public/kindeditor/themes/default/default.css" />
-	<link type="text/css" href="/manage/App/Admin/Public/Css/jquery-ui-1.8.17.custom.css" rel="stylesheet" />
-    <link type="text/css" href="/manage/App/Admin/Public/Css/jquery-ui-timepicker-addon.css" rel="stylesheet" />
-    <script type="text/javascript" src="/manage/App/Admin/Public/Js/jquery-1.7.1.min.js"></script>
-	<script type="text/javascript" src="/manage/App/Admin/Public/Js/jquery-ui-1.8.17.custom.min.js"></script>
-	<script type="text/javascript" src="/manage/App/Admin/Public/Js/jquery-ui-timepicker-addon.js"></script>
-    <script type="text/javascript" src="/manage/App/Admin/Public/Js/jquery-ui-timepicker-zh-CN.js"></script>
-	<!-- <script type="text/javascript" src = '/manage/App/Admin/Public/Js/jquery-1.7.2.min.js'></script> -->
-	<script charset="utf-8" src="/manage/App/Admin/Public/kindeditor/kindeditor.js"></script>
-	<script charset="utf-8" src="/manage/App/Admin/Public/kindeditor/lang/zh_CN.js"></script>
+	<link rel="stylesheet" href="/REM/manage/App/Admin/Public/Css/public.css" />
+	<link rel="stylesheet" href="/REM/manage/App/Admin/Public/kindeditor/themes/default/default.css" />
+	<link type="text/css" href="/REM/manage/App/Admin/Public/Css/jquery-ui-1.8.17.custom.css" rel="stylesheet" />
+    <link type="text/css" href="/REM/manage/App/Admin/Public/Css/jquery-ui-timepicker-addon.css" rel="stylesheet" />
+    <script type="text/javascript" src="/REM/manage/App/Admin/Public/Js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="/REM/manage/App/Admin/Public/Js/jquery-ui-1.8.17.custom.min.js"></script>
+	<script type="text/javascript" src="/REM/manage/App/Admin/Public/Js/jquery-ui-timepicker-addon.js"></script>
+    <script type="text/javascript" src="/REM/manage/App/Admin/Public/Js/jquery-ui-timepicker-zh-CN.js"></script>
+	<!-- <script type="text/javascript" src = '/REM/manage/App/Admin/Public/Js/jquery-1.7.2.min.js'></script> -->
+	<script charset="utf-8" src="/REM/manage/App/Admin/Public/kindeditor/kindeditor.js"></script>
+	<script charset="utf-8" src="/REM/manage/App/Admin/Public/kindeditor/lang/zh_CN.js"></script>
 	<style>
 		.add-role{
 			display: inline-block;
