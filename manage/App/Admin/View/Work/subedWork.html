@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="__PUBLIC__/Css/public.css" />
+</head>
+<body>
+	<table class="table">
+		<tr>
+			<th>文件名</th>
+			<th>上传者</th>
+			<th>上传时间</th>
+			<th>下载</th>
+		</tr>
+		<foreach name = 'work_up' item = 'v'>
+			<tr>
+				<td>{$v.filename}</td>
+				<td>{$v.username}</td>
+				<td>{$v.time|date = "m-d H:i", ###}</td>
+				<assign name="vid" value="$v['work_up_id']" />
+				<td><!-- <a href="__ROOT__/Uploads/work/{$v.savepath}">下载</a> &url={$savepath}-->
+	<a href="{:U('Admin/Work/downWork',array('vid'=>$vid))}">下载</a></td>
+			</tr>
+		</foreach>
+	</table>
+</body>
+</html>

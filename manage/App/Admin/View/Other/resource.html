@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="__PUBLIC__/Css/public.css" />
+</head>
+<body>
+	<table class="table">
+		<tr>
+			<th>文件名</th>
+			<th>格式</th>
+			<th>大小</th>
+			<th>上传时间</th>
+			<th>操作</th>
+		</tr>
+		<volist name="Resource_list" id="resource">
+	        <tr class="inform_even">
+	            <td>{$resource.filename}</td>
+	            <td class="doc">{$resource.type}</td>
+	            <td><php>echo sprintf("%.2f",$resource['size']/1024/1024);</php>Mb</td>
+	            <td>{:date("m-d H:i",$resource['time'])}</td>
+	            <td>[<a href="{:U('Admin/Other/resourceHandle', array('reId' => $resource[id]))}">删除</a>]</td>
+	        </tr>
+        </volist>
+	</table>
+	{$page}
+</body>
+</html>

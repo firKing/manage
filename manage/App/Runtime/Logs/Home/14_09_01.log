@@ -1,0 +1,42 @@
+[ 2014-09-01T15:53:08+08:00 ] 127.0.0.1 /manage/wjp/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010889s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\manage\wjp\ThinkPHP\Common\functions.php 第 1191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010805s ]
+
+[ 2014-09-01T18:24:22+08:00 ] 127.0.0.1 /manage/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026186s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\manage\ThinkPHP\Common\functions.php 第 1191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.132498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.132624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.035557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.035660s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015761s ]
+

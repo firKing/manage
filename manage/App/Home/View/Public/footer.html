@@ -1,0 +1,83 @@
+
+<div id="footer">
+	<p><a href="##" title="关于红岩网校">关于红岩网校</a> | <a href="##" title="网站地图">网站地图</a> | <a href="##" title="指出错误">指出错误</a> | <a href=" __ROOT__/index.php/Admin/Index/index" title="管理入口">管理入口</a> </p>
+	<p>本网站由红岩网校工作站负责开发，管理，不经红岩网校委员会书面同意，不得进行转载</p>
+	<p>地址：重庆市南岸区崇文路2号（重庆邮电大学内） 400065 E-mail:redrock@cqupt.edu.cn (023-62461084)</p>
+</div>
+
+<div id="theme-popover">
+	<div class="theme-poptit">
+		<div title="关闭" class="close"></div>
+		<h1 title="登录">登录</h1>
+	</div>
+	<div class="theme-popbod dform">
+		<form class="theme-signin" name="loginform" action="{:U('Home/Login/login')}" method="post">
+			<ol>
+				<li><input class="user" title="姓名" type="text" name="log" placeholder="姓名" size="20" /></li>
+				<li><input class="pass" title="密码" type="password" name="pwd" placeholder="密码" size="20" /></li>
+				<li><input class="btn" title="登录" type="submit" name="submit" value=" 登 录 " /></li>
+			</ol>
+		</form>
+	</div>
+</div>
+
+<div id="changepass">
+	<div class="theme-poptit">
+		<div title="关闭" class="close"></div>
+		<h1 title="登录"> 修 改 密 码 </h1>
+	</div>
+	<div class="theme-popbod dform">
+		<form class="theme-signin" name="loginform" action="" method="post">
+			<ol>
+		<li><input class="pass" title="旧密码" type="password" name="pass" placeholder="旧密码" size="20" /></li>
+				<li><input class="pass" title="新密码" type="password" name="newPass" placeholder="新密码" size="20" /></li>
+				<li><input class="pass" title="再次输入新密码" type="password" name="newPassEnter" placeholder="再次输入新密码" size="20" /></li>
+				<li><input class="btn" title="登录" type="submit" name="submit" value=" 确 认 修 改 " /></li>
+			</ol>
+		</form>
+	</div>
+</div>
+
+<div class="theme-popover-mask"></div>
+<div class="theme-popover-mask-fff"></div>
+
+<script type="text/javascript" src="__PUBLIC__/js/jQueryv1.7.2.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/index.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/main.js"></script>
+<script>
+    var height = document.getElementById('content').offsetHeight;
+    var nav = document.getElementById('nav');
+    var aside = document.getElementById('aside');
+    var content = document.getElementById('content');
+    var Height = document.documentElement.clientHeight;
+    var Width = document.documentElement.clientWidth;
+    if(Width < 1000){
+        Width = 1000;
+    }
+    content.style.width = Width - 600  + 'px';
+    if(height < Height - 60){
+        nav.style.height = Height - 60+ 'px';
+        aside.style.height = Height - 60+ 'px';
+    }else{
+        nav.style.height = height + 'px';
+        aside.style.height = height + 'px';
+    }
+    $(window).resize(function() { 
+        Width = document.documentElement.clientWidth;
+        if(Width < 1000){
+            Width = 1000;
+        }
+        content.style.width = Width - 600  + 'px';
+        height = document.getElementById('content').offsetHeight;
+        Height = document.documentElement.clientHeight;
+        if(height < Height - 60){
+            nav.style.height = Height - 60+ 'px';
+            aside.style.height = Height - 60+ 'px';
+        }else{
+            nav.style.height = height + 'px';
+            aside.style.height = height + 'px';
+        }
+    });
+</script>
+</body>
+</html>

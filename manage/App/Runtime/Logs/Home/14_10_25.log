@@ -1,0 +1,879 @@
+[ 2014-10-25T16:59:33+08:00 ] 127.0.0.1 /oldmanage/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.022145s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022295s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `apart_work` [ RunTime:0.586783s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `apart_work` WHERE ( apart_id = 2 ) LIMIT 1   [ RunTime:0.244563s ]
+NOTIC: [2] Division by zero D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Page.class.php 第 84 行.
+SQL: SELECT * FROM `apart_work` LEFT JOIN work ON apart_work.work_id = work.id  WHERE ( apart_id = 2 )  [ RunTime:0.395855s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.274642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.274782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.039917s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.040017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.027394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.027529s ]
+
+[ 2014-10-25T16:59:57+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002572s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008874s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.200650s ]
+SQL: SELECT * FROM `user` WHERE `username` = '李竞熠' LIMIT 1   [ RunTime:0.000771s ]
+SQL: UPDATE `user` SET `logintime`=1414227596,`loginip`='127.0.0.1' WHERE `id` = 29 [ RunTime:0.163531s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006208s ]
+SQL: SELECT `id`,`username`,`logintime`,`loginip`,`lock` FROM `user` WHERE `id` = 29  [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.077223s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name, remark FROM role_user AS a, role AS b WHERE a.role_id = b.id AND a. user_id='29' [ RunTime:0.091859s ]
+SQL: SHOW COLUMNS FROM `apartment` [ RunTime:0.168138s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name FROM apart_user AS a, apartment AS b WHERE a.apart_id = b.id AND a. user_id='29' [ RunTime:0.071605s ]
+SQL: SHOW COLUMNS FROM `level` [ RunTime:0.068321s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name FROM level_user AS a, level AS b WHERE a.level_id = b.id AND a. user_id='29' [ RunTime:0.058730s ]
+SQL: SHOW COLUMNS FROM `work` [ RunTime:0.004419s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, title, content, deadline FROM work_user AS a, work AS b WHERE a.work_id = b.id AND a. user_id='29' [ RunTime:0.080641s ]
+SQL: SELECT `id`,`username`,`logintime`,`loginip`,`lock` FROM `user` WHERE `id` = 29  [ RunTime:0.000441s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name, remark FROM role_user AS a, role AS b WHERE a.role_id = b.id AND a. user_id='29' [ RunTime:0.000169s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name FROM apart_user AS a, apartment AS b WHERE a.apart_id = b.id AND a. user_id='29' [ RunTime:0.000202s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name FROM level_user AS a, level AS b WHERE a.level_id = b.id AND a. user_id='29' [ RunTime:0.000184s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, title, content, deadline FROM work_user AS a, work AS b WHERE a.work_id = b.id AND a. user_id='29' [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: superadmin D:\wamp\www\oldmanage\ThinkPHP\Library\Org\Util\Rbac.class.php 第 88 行.
+SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='29' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.225085s ]
+SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='29' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.000740s ]
+SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='29' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=4 and node.status=1 [ RunTime:0.000589s ]
+SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='29' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.000511s ]
+SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='29' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=29 and node.status=1 [ RunTime:0.000445s ]
+SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='29' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=2 and node.status=1 [ RunTime:0.000459s ]
+SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='29' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=27 and node.status=1 [ RunTime:0.000458s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075551s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011882s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011983s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009412s ]
+
+[ 2014-10-25T16:59:58+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008923s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `apart_work` [ RunTime:0.005147s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `apart_work` WHERE ( apart_id = 2 ) LIMIT 1   [ RunTime:0.000123s ]
+NOTIC: [2] Division by zero D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Page.class.php 第 84 行.
+SQL: SELECT * FROM `apart_work` LEFT JOIN work ON apart_work.work_id = work.id  WHERE ( apart_id = 2 )  [ RunTime:0.001199s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008843s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009637s ]
+
+[ 2014-10-25T17:00:01+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008728s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `apartment` [ RunTime:0.004412s ]
+SQL: SELECT * FROM `apartment` WHERE `id` = 3  [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `work` [ RunTime:0.004404s ]
+SQL: SELECT `deadline` FROM `work` LEFT JOIN work_user ON work_user.work_id = work.id LEFT JOIN work_level ON work_level.work_id = work.id  WHERE ( user_id = 29 OR (apart_id = 3 AND level_id = 3) ) ORDER BY deadline desc LIMIT 1   [ RunTime:0.074206s ]
+SQL: SHOW COLUMNS FROM `work_up` [ RunTime:0.048451s ]
+SQL: SELECT `work_id` FROM `work_up` WHERE ( user_id = 29 )  [ RunTime:0.000528s ]
+SQL: SELECT `id` FROM `work` LEFT JOIN work_user ON work_user.work_id = work.id LEFT JOIN work_level ON work_level.work_id = work.id  WHERE ( user_id = 29 OR (apart_id = 3 AND level_id = 3) )  [ RunTime:0.001890s ]
+NOTIC: [2] array_diff(): Argument #1 is not an array D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 76 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 80 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `apart_work` [ RunTime:0.004433s ]
+SQL: SELECT * FROM `apart_work` LEFT JOIN work ON apart_work.work_id = work.id  WHERE ( apart_id = 3 ) ORDER BY id desc LIMIT 6   [ RunTime:0.032485s ]
+SQL: SELECT `work_id` FROM `apart_work` WHERE ( apart_id = 3 )  [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `work_level` [ RunTime:0.006358s ]
+SQL: SELECT `work_id`,`name` FROM `work_level` LEFT JOIN level ON work_level.level_id = level.id  WHERE (  work_id = 67  )  [ RunTime:0.000530s ]
+SQL: SELECT `work_id`,`name` FROM `work_level` LEFT JOIN level ON work_level.level_id = level.id  WHERE (  work_id = 73  )  [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.039648s ]
+SQL: SELECT * FROM `resource` ORDER BY id desc LIMIT 13   [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.046177s ]
+SQL: SELECT * FROM `question` LEFT JOIN user ON question.uid = user.id   [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.006187s ]
+SQL: SELECT * FROM `user` RIGHT JOIN information ON user.id = information.uid   [ RunTime:0.043928s ]
+SQL: SELECT * FROM `work_up` LEFT JOIN apart_user ON work_up.user_id = apart_user.user_id LEFT JOIN user ON user.id = work_up.user_id LEFT JOIN work ON work.id = work_up.work_id  WHERE ( apart_id = 3 )  [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.041724s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON notice.id = apart_notice.notice_id  WHERE ( apart_notice.apart_id = 3 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.065894s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 175 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 189 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 189 行.
+NOTIC: [8] Undefined variable: invalid_page D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008922s ]
+
+[ 2014-10-25T17:00:51+08:00 ] 127.0.0.1 /oldmanage/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007912s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `apart_work` [ RunTime:0.004358s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `apart_work` WHERE ( apart_id = 2 ) LIMIT 1   [ RunTime:0.000160s ]
+NOTIC: [2] Division by zero D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Page.class.php 第 84 行.
+SQL: SELECT * FROM `apart_work` LEFT JOIN work ON apart_work.work_id = work.id  WHERE ( apart_id = 2 )  [ RunTime:0.000343s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047217s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007725s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008588s ]
+
+[ 2014-10-25T17:00:54+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008252s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `apartment` [ RunTime:0.005457s ]
+SQL: SELECT * FROM `apartment` WHERE `id` = 3  [ RunTime:0.000206s ]
+SQL: SHOW COLUMNS FROM `work` [ RunTime:0.004342s ]
+SQL: SELECT `deadline` FROM `work` LEFT JOIN work_user ON work_user.work_id = work.id LEFT JOIN work_level ON work_level.work_id = work.id  WHERE ( user_id = 29 OR (apart_id = 3 AND level_id = 3) ) ORDER BY deadline desc LIMIT 1   [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `work_up` [ RunTime:0.004326s ]
+SQL: SELECT `work_id` FROM `work_up` WHERE ( user_id = 29 )  [ RunTime:0.000120s ]
+SQL: SELECT `id` FROM `work` LEFT JOIN work_user ON work_user.work_id = work.id LEFT JOIN work_level ON work_level.work_id = work.id  WHERE ( user_id = 29 OR (apart_id = 3 AND level_id = 3) )  [ RunTime:0.000229s ]
+NOTIC: [2] array_diff(): Argument #1 is not an array D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 76 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 80 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `apart_work` [ RunTime:0.003903s ]
+SQL: SELECT * FROM `apart_work` LEFT JOIN work ON apart_work.work_id = work.id  WHERE ( apart_id = 3 ) ORDER BY id desc LIMIT 6   [ RunTime:0.000155s ]
+SQL: SELECT `work_id` FROM `apart_work` WHERE ( apart_id = 3 )  [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `work_level` [ RunTime:0.004464s ]
+SQL: SELECT `work_id`,`name` FROM `work_level` LEFT JOIN level ON work_level.level_id = level.id  WHERE (  work_id = 67  )  [ RunTime:0.000136s ]
+SQL: SELECT `work_id`,`name` FROM `work_level` LEFT JOIN level ON work_level.level_id = level.id  WHERE (  work_id = 73  )  [ RunTime:0.000111s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.004173s ]
+SQL: SELECT * FROM `resource` ORDER BY id desc LIMIT 13   [ RunTime:0.000120s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `question` LEFT JOIN user ON question.uid = user.id   [ RunTime:0.000185s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004301s ]
+SQL: SELECT * FROM `user` RIGHT JOIN information ON user.id = information.uid   [ RunTime:0.000140s ]
+SQL: SELECT * FROM `work_up` LEFT JOIN apart_user ON work_up.user_id = apart_user.user_id LEFT JOIN user ON user.id = work_up.user_id LEFT JOIN work ON work.id = work_up.work_id  WHERE ( apart_id = 3 )  [ RunTime:0.000161s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.003956s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON notice.id = apart_notice.notice_id  WHERE ( apart_notice.apart_id = 3 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.000175s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000356s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 175 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 189 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 189 行.
+NOTIC: [8] Undefined variable: invalid_page D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014298s ]
+
+[ 2014-10-25T17:02:20+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009982s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010162s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `apart_work` [ RunTime:0.005761s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `apart_work` WHERE ( apart_id = 2 ) LIMIT 1   [ RunTime:0.000176s ]
+NOTIC: [2] Division by zero D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Page.class.php 第 84 行.
+SQL: SELECT * FROM `apart_work` LEFT JOIN work ON apart_work.work_id = work.id  WHERE ( apart_id = 2 )  [ RunTime:0.000296s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007659s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007759s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009562s ]
+
+[ 2014-10-25T17:02:22+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008077s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `apartment` [ RunTime:0.004474s ]
+SQL: SELECT * FROM `apartment` WHERE `id` = 3  [ RunTime:0.000228s ]
+SQL: SHOW COLUMNS FROM `work` [ RunTime:0.004481s ]
+SQL: SELECT `deadline` FROM `work` LEFT JOIN work_user ON work_user.work_id = work.id LEFT JOIN work_level ON work_level.work_id = work.id  WHERE ( user_id = 29 OR (apart_id = 3 AND level_id = 3) ) ORDER BY deadline desc LIMIT 1   [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `work_up` [ RunTime:0.005699s ]
+SQL: SELECT `work_id` FROM `work_up` WHERE ( user_id = 29 )  [ RunTime:0.000271s ]
+SQL: SELECT `id` FROM `work` LEFT JOIN work_user ON work_user.work_id = work.id LEFT JOIN work_level ON work_level.work_id = work.id  WHERE ( user_id = 29 OR (apart_id = 3 AND level_id = 3) )  [ RunTime:0.000146s ]
+NOTIC: [2] array_diff(): Argument #1 is not an array D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 76 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 80 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `apart_work` [ RunTime:0.004405s ]
+SQL: SELECT * FROM `apart_work` LEFT JOIN work ON apart_work.work_id = work.id  WHERE ( apart_id = 3 ) ORDER BY id desc LIMIT 6   [ RunTime:0.000235s ]
+SQL: SELECT `work_id` FROM `apart_work` WHERE ( apart_id = 3 )  [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `work_level` [ RunTime:0.004396s ]
+SQL: SELECT `work_id`,`name` FROM `work_level` LEFT JOIN level ON work_level.level_id = level.id  WHERE (  work_id = 67  )  [ RunTime:0.000135s ]
+SQL: SELECT `work_id`,`name` FROM `work_level` LEFT JOIN level ON work_level.level_id = level.id  WHERE (  work_id = 73  )  [ RunTime:0.000116s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.004146s ]
+SQL: SELECT * FROM `resource` ORDER BY id desc LIMIT 13   [ RunTime:0.000161s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.004295s ]
+SQL: SELECT * FROM `question` LEFT JOIN user ON question.uid = user.id   [ RunTime:0.000183s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004543s ]
+SQL: SELECT * FROM `user` RIGHT JOIN information ON user.id = information.uid   [ RunTime:0.000195s ]
+SQL: SELECT * FROM `work_up` LEFT JOIN apart_user ON work_up.user_id = apart_user.user_id LEFT JOIN user ON user.id = work_up.user_id LEFT JOIN work ON work.id = work_up.work_id  WHERE ( apart_id = 3 )  [ RunTime:0.000233s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.004945s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON notice.id = apart_notice.notice_id  WHERE ( apart_notice.apart_id = 3 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.000187s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000251s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 175 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 189 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 189 行.
+NOTIC: [8] Undefined variable: invalid_page D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007680s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007763s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008434s ]
+
+[ 2014-10-25T17:02:53+08:00 ] 127.0.0.1 /oldmanage/index.php/Question/submitquestion.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008196s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008341s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.004787s ]
+SQL: INSERT INTO `question` (`title`,`uid`,`time`,`content`,`reply_time`,`reply_count`) VALUES ('提个问题',29,1414227772,'问题的内容',1414227772,0) [ RunTime:0.070003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007960s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008414s ]
+
+[ 2014-10-25T17:02:54+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009268s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `apartment` [ RunTime:0.004605s ]
+SQL: SELECT * FROM `apartment` WHERE `id` = 3  [ RunTime:0.000223s ]
+SQL: SHOW COLUMNS FROM `work` [ RunTime:0.004153s ]
+SQL: SELECT `deadline` FROM `work` LEFT JOIN work_user ON work_user.work_id = work.id LEFT JOIN work_level ON work_level.work_id = work.id  WHERE ( user_id = 29 OR (apart_id = 3 AND level_id = 3) ) ORDER BY deadline desc LIMIT 1   [ RunTime:0.000176s ]
+SQL: SHOW COLUMNS FROM `work_up` [ RunTime:0.004880s ]
+SQL: SELECT `work_id` FROM `work_up` WHERE ( user_id = 29 )  [ RunTime:0.000135s ]
+SQL: SELECT `id` FROM `work` LEFT JOIN work_user ON work_user.work_id = work.id LEFT JOIN work_level ON work_level.work_id = work.id  WHERE ( user_id = 29 OR (apart_id = 3 AND level_id = 3) )  [ RunTime:0.000105s ]
+NOTIC: [2] array_diff(): Argument #1 is not an array D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 76 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 80 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `apart_work` [ RunTime:0.003951s ]
+SQL: SELECT * FROM `apart_work` LEFT JOIN work ON apart_work.work_id = work.id  WHERE ( apart_id = 3 ) ORDER BY id desc LIMIT 6   [ RunTime:0.000149s ]
+SQL: SELECT `work_id` FROM `apart_work` WHERE ( apart_id = 3 )  [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `work_level` [ RunTime:0.003946s ]
+SQL: SELECT `work_id`,`name` FROM `work_level` LEFT JOIN level ON work_level.level_id = level.id  WHERE (  work_id = 67  )  [ RunTime:0.000366s ]
+SQL: SELECT `work_id`,`name` FROM `work_level` LEFT JOIN level ON work_level.level_id = level.id  WHERE (  work_id = 73  )  [ RunTime:0.000135s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.004843s ]
+SQL: SELECT * FROM `resource` ORDER BY id desc LIMIT 13   [ RunTime:0.000165s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.004159s ]
+SQL: SELECT * FROM `question` LEFT JOIN user ON question.uid = user.id   [ RunTime:0.000361s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004064s ]
+SQL: SELECT * FROM `user` RIGHT JOIN information ON user.id = information.uid   [ RunTime:0.000136s ]
+SQL: SELECT * FROM `work_up` LEFT JOIN apart_user ON work_up.user_id = apart_user.user_id LEFT JOIN user ON user.id = work_up.user_id LEFT JOIN work ON work.id = work_up.work_id  WHERE ( apart_id = 3 )  [ RunTime:0.000159s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.004318s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON notice.id = apart_notice.notice_id  WHERE ( apart_notice.apart_id = 3 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.000123s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000253s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 175 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 189 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 189 行.
+NOTIC: [8] Undefined variable: invalid_page D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007533s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007923s ]
+
+[ 2014-10-25T17:02:58+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/ajax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003718s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011451s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.036020s ]
+SQL: SELECT `username`,`content`,`time` FROM `reply` LEFT JOIN user ON reply.uid = user.id  WHERE ( question_id = 11 )  [ RunTime:0.000723s ]
+
+[ 2014-10-25T17:02:58+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/ajax1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007998s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.004570s ]
+SQL: SELECT `username`,`content`,`time`,`title`,`question_id` FROM `question` LEFT JOIN user ON question.uid = user.id  WHERE ( question_id = 11 ) LIMIT 1   [ RunTime:0.000366s ]
+
+[ 2014-10-25T17:03:07+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/ajax2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008665s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.004375s ]
+SQL: INSERT INTO `reply` (`question_id`,`uid`,`content`,`time`) VALUES (11,29,'回复',1414227787) [ RunTime:0.075803s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.004624s ]
+SQL: UPDATE `question` SET `reply_count`=reply_count+1 WHERE ( question_id = 11 ) [ RunTime:0.034454s ]
+
+[ 2014-10-25T17:03:07+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/ajax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002695s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012116s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.005715s ]
+SQL: SELECT `username`,`content`,`time` FROM `reply` LEFT JOIN user ON reply.uid = user.id  WHERE ( question_id = 11 )  [ RunTime:0.000565s ]
+
+[ 2014-10-25T17:03:17+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/ajax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007974s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.005350s ]
+SQL: SELECT `username`,`content`,`time` FROM `reply` LEFT JOIN user ON reply.uid = user.id  WHERE ( question_id = 11 )  [ RunTime:0.000213s ]
+
+[ 2014-10-25T17:03:17+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/ajax2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002865s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008492s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.004538s ]
+SQL: INSERT INTO `reply` (`question_id`,`uid`,`content`,`time`) VALUES (11,29,'回复',1414227797) [ RunTime:0.020336s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.004593s ]
+SQL: UPDATE `question` SET `reply_count`=reply_count+1 WHERE ( question_id = 11 ) [ RunTime:0.003023s ]
+
+[ 2014-10-25T17:03:21+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/ajax2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008800s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+
+[ 2014-10-25T17:03:21+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/ajax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011959s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.004854s ]
+SQL: SELECT `username`,`content`,`time` FROM `reply` LEFT JOIN user ON reply.uid = user.id  WHERE ( question_id = 11 )  [ RunTime:0.000401s ]
+
+[ 2014-10-25T17:03:40+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002943s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008586s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `apartment` [ RunTime:0.004401s ]
+SQL: SELECT * FROM `apartment` WHERE `id` = 3  [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `work` [ RunTime:0.004150s ]
+SQL: SELECT `deadline` FROM `work` LEFT JOIN work_user ON work_user.work_id = work.id LEFT JOIN work_level ON work_level.work_id = work.id  WHERE ( user_id = 29 OR (apart_id = 3 AND level_id = 3) ) ORDER BY deadline desc LIMIT 1   [ RunTime:0.000116s ]
+SQL: SHOW COLUMNS FROM `work_up` [ RunTime:0.004123s ]
+SQL: SELECT `work_id` FROM `work_up` WHERE ( user_id = 29 )  [ RunTime:0.000111s ]
+SQL: SELECT `id` FROM `work` LEFT JOIN work_user ON work_user.work_id = work.id LEFT JOIN work_level ON work_level.work_id = work.id  WHERE ( user_id = 29 OR (apart_id = 3 AND level_id = 3) )  [ RunTime:0.000142s ]
+NOTIC: [2] array_diff(): Argument #1 is not an array D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 76 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 80 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `apart_work` [ RunTime:0.004138s ]
+SQL: SELECT * FROM `apart_work` LEFT JOIN work ON apart_work.work_id = work.id  WHERE ( apart_id = 3 ) ORDER BY id desc LIMIT 6   [ RunTime:0.000241s ]
+SQL: SELECT `work_id` FROM `apart_work` WHERE ( apart_id = 3 )  [ RunTime:0.000110s ]
+SQL: SHOW COLUMNS FROM `work_level` [ RunTime:0.004121s ]
+SQL: SELECT `work_id`,`name` FROM `work_level` LEFT JOIN level ON work_level.level_id = level.id  WHERE (  work_id = 67  )  [ RunTime:0.000135s ]
+SQL: SELECT `work_id`,`name` FROM `work_level` LEFT JOIN level ON work_level.level_id = level.id  WHERE (  work_id = 73  )  [ RunTime:0.000118s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.004694s ]
+SQL: SELECT * FROM `resource` ORDER BY id desc LIMIT 13   [ RunTime:0.000209s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.005062s ]
+SQL: SELECT * FROM `question` LEFT JOIN user ON question.uid = user.id   [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004298s ]
+SQL: SELECT * FROM `user` RIGHT JOIN information ON user.id = information.uid   [ RunTime:0.000209s ]
+SQL: SELECT * FROM `work_up` LEFT JOIN apart_user ON work_up.user_id = apart_user.user_id LEFT JOIN user ON user.id = work_up.user_id LEFT JOIN work ON work.id = work_up.work_id  WHERE ( apart_id = 3 )  [ RunTime:0.000234s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.004097s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON notice.id = apart_notice.notice_id  WHERE ( apart_notice.apart_id = 3 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.000188s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000347s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 175 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 189 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 189 行.
+NOTIC: [8] Undefined variable: invalid_page D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008353s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008594s ]
+
+[ 2014-10-25T17:03:45+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/ajax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010359s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.007451s ]
+SQL: SELECT `username`,`content`,`time` FROM `reply` LEFT JOIN user ON reply.uid = user.id  WHERE ( question_id = 10 )  [ RunTime:0.001261s ]
+
+[ 2014-10-25T17:03:45+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/ajax1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005702s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010012s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.004318s ]
+SQL: SELECT `username`,`content`,`time`,`title`,`question_id` FROM `question` LEFT JOIN user ON question.uid = user.id  WHERE ( question_id = 10 ) LIMIT 1   [ RunTime:0.000365s ]
+
+[ 2014-10-25T17:03:52+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/ajax1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003563s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013810s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.006368s ]
+SQL: SELECT `username`,`content`,`time`,`title`,`question_id` FROM `question` LEFT JOIN user ON question.uid = user.id  WHERE ( question_id = 10 ) LIMIT 1   [ RunTime:0.000295s ]
+
+[ 2014-10-25T17:03:52+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/ajax
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008100s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.004389s ]
+SQL: SELECT `username`,`content`,`time` FROM `reply` LEFT JOIN user ON reply.uid = user.id  WHERE ( question_id = 10 )  [ RunTime:0.000210s ]
+
+[ 2014-10-25T17:04:51+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007980s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `apart_work` [ RunTime:0.004888s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `apart_work` WHERE ( apart_id = 2 ) LIMIT 1   [ RunTime:0.000226s ]
+NOTIC: [2] Division by zero D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Page.class.php 第 84 行.
+SQL: SELECT * FROM `apart_work` LEFT JOIN work ON apart_work.work_id = work.id  WHERE ( apart_id = 2 )  [ RunTime:0.000354s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007699s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008679s ]
+
+[ 2014-10-25T17:32:57+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008146s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.070918s ]
+SQL: SELECT * FROM `user` WHERE `username` = '王洋辉' LIMIT 1   [ RunTime:0.000474s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042542s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007820s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007892s ]
+
+[ 2014-10-25T17:33:18+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007937s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004627s ]
+SQL: SELECT * FROM `user` WHERE `username` = '李竞熠' LIMIT 1   [ RunTime:0.000401s ]
+SQL: UPDATE `user` SET `logintime`=1414229598,`loginip`='127.0.0.1' WHERE `id` = 29 [ RunTime:0.035792s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005205s ]
+SQL: SELECT `id`,`username`,`logintime`,`loginip`,`lock` FROM `user` WHERE `id` = 29  [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005358s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name, remark FROM role_user AS a, role AS b WHERE a.role_id = b.id AND a. user_id='29' [ RunTime:0.000194s ]
+SQL: SHOW COLUMNS FROM `apartment` [ RunTime:0.004287s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name FROM apart_user AS a, apartment AS b WHERE a.apart_id = b.id AND a. user_id='29' [ RunTime:0.000171s ]
+SQL: SHOW COLUMNS FROM `level` [ RunTime:0.004596s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name FROM level_user AS a, level AS b WHERE a.level_id = b.id AND a. user_id='29' [ RunTime:0.000184s ]
+SQL: SHOW COLUMNS FROM `work` [ RunTime:0.004600s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, title, content, deadline FROM work_user AS a, work AS b WHERE a.work_id = b.id AND a. user_id='29' [ RunTime:0.000188s ]
+SQL: SELECT `id`,`username`,`logintime`,`loginip`,`lock` FROM `user` WHERE `id` = 29  [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name, remark FROM role_user AS a, role AS b WHERE a.role_id = b.id AND a. user_id='29' [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name FROM apart_user AS a, apartment AS b WHERE a.apart_id = b.id AND a. user_id='29' [ RunTime:0.000152s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name FROM level_user AS a, level AS b WHERE a.level_id = b.id AND a. user_id='29' [ RunTime:0.000118s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, title, content, deadline FROM work_user AS a, work AS b WHERE a.work_id = b.id AND a. user_id='29' [ RunTime:0.000138s ]
+NOTIC: [8] Undefined index: superadmin D:\wamp\www\oldmanage\ThinkPHP\Library\Org\Util\Rbac.class.php 第 88 行.
+SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='29' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.000213s ]
+SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='29' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.000177s ]
+SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='29' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=4 and node.status=1 [ RunTime:0.000186s ]
+SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='29' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.000292s ]
+SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='29' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=29 and node.status=1 [ RunTime:0.000149s ]
+SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='29' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=2 and node.status=1 [ RunTime:0.000143s ]
+SQL: select node.id,node.name from role as role,role_user as user,access as access ,node as node where user.user_id='29' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=27 and node.status=1 [ RunTime:0.000187s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008609s ]
+
+[ 2014-10-25T17:33:19+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008391s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `apart_work` [ RunTime:0.006294s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `apart_work` WHERE ( apart_id = 2 ) LIMIT 1   [ RunTime:0.000186s ]
+NOTIC: [2] Division by zero D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Page.class.php 第 84 行.
+SQL: SELECT * FROM `apart_work` LEFT JOIN work ON apart_work.work_id = work.id  WHERE ( apart_id = 2 )  [ RunTime:0.000308s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007794s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009371s ]
+
+[ 2014-10-25T17:33:34+08:00 ] 127.0.0.1 /oldmanage/index.php/Home/Apart/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008162s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `apartment` [ RunTime:0.045101s ]
+SQL: SELECT * FROM `apartment` WHERE `id` = 3  [ RunTime:0.000192s ]
+SQL: SHOW COLUMNS FROM `work` [ RunTime:0.004228s ]
+SQL: SELECT `deadline` FROM `work` LEFT JOIN work_user ON work_user.work_id = work.id LEFT JOIN work_level ON work_level.work_id = work.id  WHERE ( user_id = 29 OR (apart_id = 3 AND level_id = 3) ) ORDER BY deadline desc LIMIT 1   [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `work_up` [ RunTime:0.004320s ]
+SQL: SELECT `work_id` FROM `work_up` WHERE ( user_id = 29 )  [ RunTime:0.000316s ]
+SQL: SELECT `id` FROM `work` LEFT JOIN work_user ON work_user.work_id = work.id LEFT JOIN work_level ON work_level.work_id = work.id  WHERE ( user_id = 29 OR (apart_id = 3 AND level_id = 3) )  [ RunTime:0.000160s ]
+NOTIC: [2] array_diff(): Argument #1 is not an array D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 76 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 80 行.
+NOTIC: [8] Undefined variable: data D:\wamp\www\oldmanage\App\Home\Controller\ApartController.class.php 第 124 行.
+SQL: SHOW COLUMNS FROM `apart_work` [ RunTime:0.004101s ]
+SQL: SELECT * FROM `apart_work` LEFT JOIN work ON apart_work.work_id = work.id  WHERE ( apart_id = 3 ) ORDER BY id desc LIMIT 6   [ RunTime:0.000408s ]
+SQL: SELECT `work_id` FROM `apart_work` WHERE ( apart_id = 3 )  [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `work_level` [ RunTime:0.004682s ]
+SQL: SELECT `work_id`,`name` FROM `work_level` LEFT JOIN level ON work_level.level_id = level.id  WHERE (  work_id = 67  )  [ RunTime:0.000242s ]
+SQL: SELECT `work_id`,`name` FROM `work_level` LEFT JOIN level ON work_level.level_id = level.id  WHERE (  work_id = 73  )  [ RunTime:0.000236s ]
+SQL: SHOW COLUMNS FROM `resource` [ RunTime:0.005087s ]
+SQL: SELECT * FROM `resource` ORDER BY id desc LIMIT 13   [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.004343s ]
+SQL: SELECT * FROM `question` LEFT JOIN user ON question.uid = user.id   [ RunTime:0.000519s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004046s ]
+SQL: SELECT * FROM `user` RIGHT JOIN information ON user.id = information.uid   [ RunTime:0.000721s ]
+SQL: SELECT * FROM `work_up` LEFT JOIN apart_user ON work_up.user_id = apart_user.user_id LEFT JOIN user ON user.id = work_up.user_id LEFT JOIN work ON work.id = work_up.work_id  WHERE ( apart_id = 3 )  [ RunTime:0.001488s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.004692s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON notice.id = apart_notice.notice_id  WHERE ( apart_notice.apart_id = 3 ) ORDER BY createtime desc LIMIT 1   [ RunTime:0.000283s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] Undefined variable: page D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 175 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 189 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 189 行.
+NOTIC: [8] Undefined variable: invalid_page D:\wamp\www\oldmanage\App\Runtime\Cache\Home\cf2a18121bf2639402ad186f532a5c6a.php 第 199 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008184s ]
+
+[ 2014-10-25T18:02:00+08:00 ] 127.0.0.1 /manage/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007978s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\manage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `apart_work` [ RunTime:0.025755s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `apart_work` WHERE ( apart_id = 2 ) LIMIT 1   [ RunTime:0.000181s ]
+NOTIC: [2] Division by zero D:\wamp\www\manage\ThinkPHP\Library\Think\Page.class.php 第 84 行.
+SQL: SELECT * FROM `apart_work` LEFT JOIN work ON apart_work.work_id = work.id  WHERE ( apart_id = 2 )  [ RunTime:0.000318s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008628s ]
+
+[ 2014-10-25T18:02:10+08:00 ] 127.0.0.1 /manage/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008013s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\manage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.023149s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.000526s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037941s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014852s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015031s ]
+
+[ 2014-10-25T18:02:20+08:00 ] 127.0.0.1 /manage/index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007904s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008030s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\manage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004797s ]
+SQL: SELECT * FROM `user` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.000376s ]
+SQL: UPDATE `user` SET `logintime`=1414231339,`loginip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.033600s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005091s ]
+SQL: SELECT `id`,`username`,`logintime`,`loginip`,`lock` FROM `user` WHERE `id` = 1  [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `role` [ RunTime:0.005144s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\manage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\manage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name, remark FROM role_user AS a, role AS b WHERE a.role_id = b.id AND a. user_id='1' [ RunTime:0.009141s ]
+SQL: SHOW COLUMNS FROM `apartment` [ RunTime:0.004851s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\manage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\manage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name FROM apart_user AS a, apartment AS b WHERE a.apart_id = b.id AND a. user_id='1' [ RunTime:0.035842s ]
+SQL: SHOW COLUMNS FROM `level` [ RunTime:0.004907s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\manage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\manage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name FROM level_user AS a, level AS b WHERE a.level_id = b.id AND a. user_id='1' [ RunTime:0.009943s ]
+SQL: SHOW COLUMNS FROM `work` [ RunTime:0.005434s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\manage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\manage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, title, content, deadline FROM work_user AS a, work AS b WHERE a.work_id = b.id AND a. user_id='1' [ RunTime:0.047197s ]
+SQL: SELECT `id`,`username`,`logintime`,`loginip`,`lock` FROM `user` WHERE `id` = 1  [ RunTime:0.000327s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\manage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\manage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name, remark FROM role_user AS a, role AS b WHERE a.role_id = b.id AND a. user_id='1' [ RunTime:0.000198s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\manage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\manage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name FROM apart_user AS a, apartment AS b WHERE a.apart_id = b.id AND a. user_id='1' [ RunTime:0.000355s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\manage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\manage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, name FROM level_user AS a, level AS b WHERE a.level_id = b.id AND a. user_id='1' [ RunTime:0.000213s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\manage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\manage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, title, content, deadline FROM work_user AS a, work AS b WHERE a.work_id = b.id AND a. user_id='1' [ RunTime:0.000368s ]
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\manage\App\Home\Controller\LoginController.class.php 第 48 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007967s ]
+
+[ 2014-10-25T18:02:21+08:00 ] 127.0.0.1 /manage/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009129s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\manage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `apart_work` [ RunTime:0.004343s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `apart_work` WHERE ( apart_id = 2 ) LIMIT 1   [ RunTime:0.000339s ]
+NOTIC: [2] Division by zero D:\wamp\www\manage\ThinkPHP\Library\Think\Page.class.php 第 84 行.
+SQL: SELECT * FROM `apart_work` LEFT JOIN work ON apart_work.work_id = work.id  WHERE ( apart_id = 2 )  [ RunTime:0.000277s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007919s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008208s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008300s ]
+

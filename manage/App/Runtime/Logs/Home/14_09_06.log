@@ -1,0 +1,80 @@
+[ 2014-09-06T16:37:01+08:00 ] 113.251.175.239 /manage/manage/index.php/Home/Apart/ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015863s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\manage\manage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.049538s ]
+SQL: SELECT `username`,`content`,`time` FROM `reply` LEFT JOIN user ON reply.uid = user.id  WHERE ( question_id = 3 ) ORDER BY time desc  [ RunTime:0.010899s ]
+
+[ 2014-09-06T16:37:02+08:00 ] 113.251.175.239 /manage/manage/index.php/Home/Apart/ajax1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015261s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\manage\manage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.005675s ]
+SQL: SELECT `username`,`content`,`time`,`title`,`question_id` FROM `question` LEFT JOIN user ON question.uid = user.id  WHERE ( question_id = 3 ) LIMIT 1   [ RunTime:0.000534s ]
+
+[ 2014-09-06T16:37:05+08:00 ] 113.251.175.239 /manage/manage/index.php/Home/Apart/ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016891s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\manage\manage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.005536s ]
+SQL: SELECT `username`,`content`,`time` FROM `reply` LEFT JOIN user ON reply.uid = user.id  WHERE ( question_id = 4 ) ORDER BY time desc  [ RunTime:0.000385s ]
+
+[ 2014-09-06T16:37:05+08:00 ] 113.251.175.239 /manage/manage/index.php/Home/Apart/ajax1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014412s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\manage\manage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.005698s ]
+SQL: SELECT `username`,`content`,`time`,`title`,`question_id` FROM `question` LEFT JOIN user ON question.uid = user.id  WHERE ( question_id = 4 ) LIMIT 1   [ RunTime:0.000469s ]
+
+[ 2014-09-06T16:37:09+08:00 ] 113.251.175.239 /manage/manage/index.php/Home/Apart/ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022979s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\manage\manage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.008125s ]
+SQL: SELECT `username`,`content`,`time` FROM `reply` LEFT JOIN user ON reply.uid = user.id  WHERE ( question_id = 3 ) ORDER BY time desc  [ RunTime:0.000563s ]
+
+[ 2014-09-06T16:37:09+08:00 ] 113.251.175.239 /manage/manage/index.php/Home/Apart/ajax1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013893s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\manage\manage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.005721s ]
+SQL: SELECT `username`,`content`,`time`,`title`,`question_id` FROM `question` LEFT JOIN user ON question.uid = user.id  WHERE ( question_id = 3 ) LIMIT 1   [ RunTime:0.000246s ]
+
+[ 2014-09-06T16:37:13+08:00 ] 113.251.175.239 /manage/manage/index.php/Home/Apart/ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.023902s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\manage\manage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.012186s ]
+SQL: SELECT `username`,`content`,`time` FROM `reply` LEFT JOIN user ON reply.uid = user.id  WHERE ( question_id = 3 ) ORDER BY time desc  [ RunTime:0.000293s ]
+
+[ 2014-09-06T16:37:13+08:00 ] 113.251.175.239 /manage/manage/index.php/Home/Apart/ajax1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013820s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\manage\manage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.005409s ]
+SQL: SELECT `username`,`content`,`time`,`title`,`question_id` FROM `question` LEFT JOIN user ON question.uid = user.id  WHERE ( question_id = 3 ) LIMIT 1   [ RunTime:0.000226s ]
+
+[ 2014-09-06T16:37:17+08:00 ] 113.251.175.239 /manage/manage/index.php/Home/Apart/ajax1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019991s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\manage\manage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `question` [ RunTime:0.011758s ]
+SQL: SELECT `username`,`content`,`time`,`title`,`question_id` FROM `question` LEFT JOIN user ON question.uid = user.id  WHERE ( question_id = 5 ) LIMIT 1   [ RunTime:0.001070s ]
+
+[ 2014-09-06T16:37:17+08:00 ] 113.251.175.239 /manage/manage/index.php/Home/Apart/ajax
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013928s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\manage\manage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `reply` [ RunTime:0.005762s ]
+SQL: SELECT `username`,`content`,`time` FROM `reply` LEFT JOIN user ON reply.uid = user.id  WHERE ( question_id = 5 ) ORDER BY time desc  [ RunTime:0.000480s ]
+

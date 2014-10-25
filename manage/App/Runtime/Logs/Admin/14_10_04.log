@@ -1,0 +1,215 @@
+[ 2014-10-04T12:22:23+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011346s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+
+[ 2014-10-04T12:22:47+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009537s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012129s ]
+
+[ 2014-10-04T12:22:47+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Index/conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011475s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000466s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000581s ]
+NOTIC: [8] Undefined variable: time D:\wamp\www\oldmanage\App\Runtime\Cache\Admin\e0852ee07e2cbe427a5bdfe411069bc0.php 第 36 行.
+NOTIC: [8] Undefined variable: ip D:\wamp\www\oldmanage\App\Runtime\Cache\Admin\e0852ee07e2cbe427a5bdfe411069bc0.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010635s ]
+
+[ 2014-10-04T12:22:49+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addWork
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002838s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010275s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `apartment` [ RunTime:0.005195s ]
+SQL: SELECT `id`,`name`,`status` FROM `apartment` WHERE `id` = 2  [ RunTime:0.000400s ]
+SQL: SHOW COLUMNS FROM `work` [ RunTime:0.005594s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, title, content, deadline FROM apart_work AS a, work AS b WHERE a.work_id = b.id AND a. apart_id='2' [ RunTime:0.010746s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005828s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, username FROM apart_user AS a, user AS b WHERE a.user_id = b.id AND a. apart_id='2' [ RunTime:0.000494s ]
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.060965s ]
+NOTIC: [8] Undefined index: mapping_order D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\wamp\www\oldmanage\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.id, title, content, createtime FROM apart_notice AS a, notice AS b WHERE a.notice_id = b.id AND a. apart_id='2' [ RunTime:0.013337s ]
+SQL: SHOW COLUMNS FROM `level` [ RunTime:0.005204s ]
+SQL: SELECT * FROM `level`  [ RunTime:0.000380s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063321s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063470s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009480s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009655s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009814s ]
+
+[ 2014-10-04T12:24:50+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Index/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011330s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+
+[ 2014-10-04T14:49:44+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013564s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026281s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+NOTIC: [8] Undefined index: 7195a62edfd11a40a68c77ff40ee98a6 D:\wamp\www\oldmanage\ThinkPHP\Library\Org\Util\Rbac.class.php 第 170 行.
+NOTIC: [8] Undefined index: _ACCESS_LIST D:\wamp\www\oldmanage\ThinkPHP\Library\Org\Util\Rbac.class.php 第 174 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.140879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.140994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.029852s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.029959s ]
+
+[ 2014-10-04T15:09:21+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002948s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010013s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.087033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013137s ]
+
+[ 2014-10-04T15:09:21+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Index/conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004359s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010139s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+NOTIC: [8] Undefined variable: time D:\wamp\www\oldmanage\App\Runtime\Cache\Admin\e0852ee07e2cbe427a5bdfe411069bc0.php 第 36 行.
+NOTIC: [8] Undefined variable: ip D:\wamp\www\oldmanage\App\Runtime\Cache\Admin\e0852ee07e2cbe427a5bdfe411069bc0.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061804s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009403s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009632s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009739s ]
+
+[ 2014-10-04T15:09:23+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addWork
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009919s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `apartment` [ RunTime:0.020297s ]
+NOTIC: [8] Undefined index: apart_id D:\wamp\www\oldmanage\App\Admin\Controller\WorkController.class.php 第 32 行.
+SQL: SELECT `id`,`name`,`status` FROM `apartment` WHERE `id` = null  [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `level` [ RunTime:0.018269s ]
+SQL: SELECT * FROM `level`  [ RunTime:0.000187s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010150s ]
+
+[ 2014-10-04T15:09:41+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addWork
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013269s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `apartment` [ RunTime:0.005387s ]
+NOTIC: [8] Undefined index: apart_id D:\wamp\www\oldmanage\App\Admin\Controller\WorkController.class.php 第 32 行.
+SQL: SELECT `id`,`name`,`status` FROM `apartment` WHERE `id` = null  [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `level` [ RunTime:0.005142s ]
+SQL: SELECT * FROM `level`  [ RunTime:0.000142s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047816s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009809s ]
+

@@ -1,0 +1,691 @@
+[ 2014-10-09T20:20:03+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Index/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002853s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010135s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+
+[ 2014-10-09T20:21:01+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Index/infHandle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002951s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009734s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `information` [ RunTime:0.005225s ]
+SQL: SELECT * FROM `information` WHERE `uid` = 29 LIMIT 1   [ RunTime:0.000641s ]
+SQL: UPDATE `information` SET `phone`='18812341234' WHERE `uid` = 29 [ RunTime:0.002929s ]
+SQL: UPDATE `information` SET `phone`='18812341234',`email`='8899774@qq.com' WHERE `uid` = 29 [ RunTime:0.048151s ]
+SQL: UPDATE `information` SET `phone`='18812341234',`email`='8899774@qq.com',`txqq`='8899774' WHERE `uid` = 29 [ RunTime:0.001803s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010251s ]
+
+[ 2014-10-09T20:21:32+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002842s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009744s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+NOTIC: [8] Undefined index: 7195a62edfd11a40a68c77ff40ee98a6 D:\wamp\www\oldmanage\ThinkPHP\Library\Org\Util\Rbac.class.php 第 170 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.113253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.113412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009219s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011135s ]
+
+[ 2014-10-09T20:21:32+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Index/conf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011921s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined variable: time D:\wamp\www\oldmanage\App\Runtime\Cache\Admin\e0852ee07e2cbe427a5bdfe411069bc0.php 第 36 行.
+NOTIC: [8] Undefined variable: ip D:\wamp\www\oldmanage\App\Runtime\Cache\Admin\e0852ee07e2cbe427a5bdfe411069bc0.php 第 37 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083754s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009841s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009946s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009916s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010028s ]
+
+[ 2014-10-09T20:21:34+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009950s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+NOTIC: [8] Undefined index: b5783510ea690d96a17ab9aa82a8aa50 D:\wamp\www\oldmanage\ThinkPHP\Library\Org\Util\Rbac.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.005560s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON apart_notice.notice_id = notice.id  WHERE `apart_id` = '3' ORDER BY id desc LIMIT 1   [ RunTime:0.000513s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009753s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010889s ]
+
+[ 2014-10-09T20:21:55+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNoticeHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003744s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010898s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009520s ]
+
+[ 2014-10-09T20:22:06+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNoticeHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009540s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.005311s ]
+SQL: INSERT INTO `notice` (`title`,`content`,`createtime`) VALUES ('全站ajax真坑','坑的一笔',1412857326) [ RunTime:0.019943s ]
+SQL: SHOW COLUMNS FROM `apart_notice` [ RunTime:0.005072s ]
+SQL: INSERT INTO `apart_notice` (`apart_id`,`notice_id`) VALUES (3,2) [ RunTime:0.000430s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009956s ]
+
+[ 2014-10-09T20:22:07+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009817s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.005163s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON apart_notice.notice_id = notice.id  WHERE `apart_id` = '3' ORDER BY id desc LIMIT 1   [ RunTime:0.023148s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012880s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010404s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010508s ]
+
+[ 2014-10-09T20:22:21+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009915s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.005787s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON apart_notice.notice_id = notice.id  WHERE `apart_id` = '3' ORDER BY id desc LIMIT 1   [ RunTime:0.000188s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047688s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010736s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009576s ]
+
+[ 2014-10-09T20:22:31+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNoticeHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002963s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009831s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043013s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009305s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009404s ]
+
+[ 2014-10-09T20:22:39+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNoticeHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010043s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.006581s ]
+SQL: INSERT INTO `notice` (`title`,`content`,`createtime`) VALUES ('全站ajax真坑','全站ajax真坑坑的一笔',1412857359) [ RunTime:0.002871s ]
+SQL: SHOW COLUMNS FROM `apart_notice` [ RunTime:0.007224s ]
+SQL: INSERT INTO `apart_notice` (`apart_id`,`notice_id`) VALUES (3,3) [ RunTime:0.000441s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010299s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010115s ]
+
+[ 2014-10-09T20:22:40+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009682s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.005211s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON apart_notice.notice_id = notice.id  WHERE `apart_id` = '3' ORDER BY id desc LIMIT 1   [ RunTime:0.000738s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044299s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009449s ]
+
+[ 2014-10-09T20:22:51+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNoticeHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011126s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011307s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.006859s ]
+SQL: INSERT INTO `notice` (`title`,`content`,`createtime`) VALUES ('全站ajax真坑','全站ajax真坑 &amp;nbsp; 坑的一笔',1412857371) [ RunTime:0.002133s ]
+SQL: SHOW COLUMNS FROM `apart_notice` [ RunTime:0.008331s ]
+SQL: INSERT INTO `apart_notice` (`apart_id`,`notice_id`) VALUES (3,4) [ RunTime:0.000515s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012702s ]
+
+[ 2014-10-09T20:22:53+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013113s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.006960s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON apart_notice.notice_id = notice.id  WHERE `apart_id` = '3' ORDER BY id desc LIMIT 1   [ RunTime:0.001012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010771s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010912s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010173s ]
+
+[ 2014-10-09T20:23:07+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNoticeHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012453s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.006648s ]
+SQL: INSERT INTO `notice` (`title`,`content`,`createtime`) VALUES ('全站ajax真坑','全站ajax真坑,坑的一笔',1412857387) [ RunTime:0.029915s ]
+SQL: SHOW COLUMNS FROM `apart_notice` [ RunTime:0.005321s ]
+SQL: INSERT INTO `apart_notice` (`apart_id`,`notice_id`) VALUES (3,5) [ RunTime:0.000357s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046166s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009745s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009823s ]
+
+[ 2014-10-09T20:23:09+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013540s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.007624s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON apart_notice.notice_id = notice.id  WHERE `apart_id` = '3' ORDER BY id desc LIMIT 1   [ RunTime:0.000703s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054953s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012800s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012900s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012339s ]
+
+[ 2014-10-09T20:23:13+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNoticeHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002795s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011317s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.005753s ]
+SQL: INSERT INTO `notice` (`title`,`content`,`createtime`) VALUES ('全站ajax真坑','&lt;p&gt;\r\n	全站ajax真坑\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	,坑的一笔\r\n&lt;/p&gt;',1412857393) [ RunTime:0.004072s ]
+SQL: SHOW COLUMNS FROM `apart_notice` [ RunTime:0.006167s ]
+SQL: INSERT INTO `apart_notice` (`apart_id`,`notice_id`) VALUES (3,6) [ RunTime:0.000544s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046939s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010746s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010955s ]
+
+[ 2014-10-09T20:23:14+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002786s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009713s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.005489s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON apart_notice.notice_id = notice.id  WHERE `apart_id` = '3' ORDER BY id desc LIMIT 1   [ RunTime:0.000931s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000484s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000586s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009660s ]
+
+[ 2014-10-09T20:26:07+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNoticeHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012195s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.006889s ]
+SQL: INSERT INTO `notice` (`title`,`content`,`createtime`) VALUES ('全站ajax真坑','&lt;p&gt;\r\n	全站ajax真坑\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span style=&quot;line-height:1.5;&quot;&gt;坑的一笔&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span style=&quot;line-height:1.5;&quot;&gt;坑的一笔&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span style=&quot;line-height:1.5;&quot;&gt;啊&lt;/span&gt;\r\n&lt;/p&gt;',1412857567) [ RunTime:0.014391s ]
+SQL: SHOW COLUMNS FROM `apart_notice` [ RunTime:0.005480s ]
+SQL: INSERT INTO `apart_notice` (`apart_id`,`notice_id`) VALUES (3,7) [ RunTime:0.000332s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010212s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010310s ]
+
+[ 2014-10-09T20:26:08+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002946s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010971s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.006128s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON apart_notice.notice_id = notice.id  WHERE `apart_id` = '3' ORDER BY id desc LIMIT 1   [ RunTime:0.001049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048372s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011314s ]
+
+[ 2014-10-09T20:26:28+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNoticeHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009710s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.006261s ]
+SQL: INSERT INTO `notice` (`title`,`content`,`createtime`) VALUES ('全站ajax真坑','&lt;p&gt;\r\n	全站ajax真坑\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span style=&quot;line-height:1.5;&quot;&gt;坑的一笔&lt;/span&gt; \r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span style=&quot;line-height:1.5;&quot;&gt;坑的一笔&lt;/span&gt; \r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span style=&quot;line-height:1.5;&quot;&gt;啊&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span style=&quot;line-height:1.5;&quot;&gt;啊&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span style=&quot;line-height:1.5;&quot;&gt;啊&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;',1412857588) [ RunTime:0.001416s ]
+SQL: SHOW COLUMNS FROM `apart_notice` [ RunTime:0.007061s ]
+SQL: INSERT INTO `apart_notice` (`apart_id`,`notice_id`) VALUES (3,8) [ RunTime:0.000404s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010254s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009865s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009949s ]
+
+[ 2014-10-09T20:26:30+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009856s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.006283s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON apart_notice.notice_id = notice.id  WHERE `apart_id` = '3' ORDER BY id desc LIMIT 1   [ RunTime:0.001164s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010939s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012415s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012540s ]
+
+[ 2014-10-09T20:26:44+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNoticeHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011055s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.005087s ]
+SQL: INSERT INTO `notice` (`title`,`content`,`createtime`) VALUES ('全站ajax真坑','&lt;p&gt;\r\n	全站ajax真坑\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span style=&quot;line-height:1.5;&quot;&gt;坑的一笔&lt;/span&gt; \r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span style=&quot;line-height:1.5;&quot;&gt;坑的一笔&lt;/span&gt; \r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span style=&quot;line-height:1.5;&quot;&gt;啊&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;',1412857604) [ RunTime:0.002118s ]
+SQL: SHOW COLUMNS FROM `apart_notice` [ RunTime:0.004778s ]
+SQL: INSERT INTO `apart_notice` (`apart_id`,`notice_id`) VALUES (3,9) [ RunTime:0.000306s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009478s ]
+
+[ 2014-10-09T20:26:46+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002901s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013805s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.006743s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON apart_notice.notice_id = notice.id  WHERE `apart_id` = '3' ORDER BY id desc LIMIT 1   [ RunTime:0.001734s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010855s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010007s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010104s ]
+
+[ 2014-10-09T20:27:05+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNoticeHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010260s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.007312s ]
+SQL: INSERT INTO `notice` (`title`,`content`,`createtime`) VALUES ('全站ajax真坑','&lt;p&gt;\r\n	全站ajax真坑 &amp;nbsp;&lt;span style=&quot;line-height:1.5;&quot;&gt;坑的一笔&lt;/span&gt;\r\n&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;',1412857625) [ RunTime:0.002985s ]
+SQL: SHOW COLUMNS FROM `apart_notice` [ RunTime:0.005590s ]
+SQL: INSERT INTO `apart_notice` (`apart_id`,`notice_id`) VALUES (3,10) [ RunTime:0.000340s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010562s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010864s ]
+
+[ 2014-10-09T20:27:07+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.011518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011680s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.005225s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON apart_notice.notice_id = notice.id  WHERE `apart_id` = '3' ORDER BY id desc LIMIT 1   [ RunTime:0.000858s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050873s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013378s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011669s ]
+
+[ 2014-10-09T20:27:20+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNoticeHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014080s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.005021s ]
+SQL: INSERT INTO `notice` (`title`,`content`,`createtime`) VALUES ('全站ajax真坑','&lt;p&gt;\r\n	&lt;br /&gt;\r\n&lt;/p&gt;',1412857640) [ RunTime:0.003123s ]
+SQL: SHOW COLUMNS FROM `apart_notice` [ RunTime:0.005891s ]
+SQL: INSERT INTO `apart_notice` (`apart_id`,`notice_id`) VALUES (3,11) [ RunTime:0.000291s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009686s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010712s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010811s ]
+
+[ 2014-10-09T20:27:21+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010480s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.006860s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON apart_notice.notice_id = notice.id  WHERE `apart_id` = '3' ORDER BY id desc LIMIT 1   [ RunTime:0.000958s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053087s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011800s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010767s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010872s ]
+
+[ 2014-10-09T20:27:40+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNoticeHandle
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009690s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.005357s ]
+SQL: INSERT INTO `notice` (`title`,`content`,`createtime`) VALUES ('全站ajax真坑','&lt;p&gt;\r\n	全站ajax 坑的一笔啊\r\n&lt;/p&gt;',1412857660) [ RunTime:0.001665s ]
+SQL: SHOW COLUMNS FROM `apart_notice` [ RunTime:0.004984s ]
+SQL: INSERT INTO `apart_notice` (`apart_id`,`notice_id`) VALUES (3,12) [ RunTime:0.000338s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009580s ]
+
+[ 2014-10-09T20:27:42+08:00 ] 127.0.0.1 /oldmanage/index.php/Admin/Work/addNotice
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014833s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\wamp\www\oldmanage\ThinkPHP\Common\functions.php 第 1191 行.
+SQL: SHOW COLUMNS FROM `notice` [ RunTime:0.005834s ]
+SQL: SELECT * FROM `notice` LEFT JOIN apart_notice ON apart_notice.notice_id = notice.id  WHERE `apart_id` = '3' ORDER BY id desc LIMIT 1   [ RunTime:0.001036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009950s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010874s ]
+

@@ -1,0 +1,29 @@
+var trs = document.getElementsByTagName("table")[0].getElementsByTagName("tr")[5];
+var mingdan = trs.getElementsByTagName("td")[1].getElementsByTagName("a");
+function forms(){
+	var a = document.getElementsByTagName("iframe")[0].contentWindow;
+	var inputs = a.document.getElementsByTagName("input");
+	for (var i = 0; i < inputs.length; i++) {
+		if(inputs[i].value == 10){
+			inputs[i].click();
+		}
+		if(inputs[i].type == "submit"){
+			if(inputs[i].disabled){
+				inputs[i].disabled = "";
+			}
+			inputs[i].click();
+		}
+	};
+}
+var content = -1;
+function start () {
+	content++;
+	if (content < mingdan.length - 1) {
+		mingdan[content].click();
+	}else{
+		return;
+	}
+	setTimeout(forms,800)
+	setTimeout(start,1500);
+}
+start();
